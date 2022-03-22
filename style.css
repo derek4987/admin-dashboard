@@ -23,6 +23,7 @@ ul {
 .header {
     background-color: purple;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
     padding: 4px;
 }
 
@@ -32,27 +33,37 @@ ul {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     padding: 15px;
-    display: grid;
-    gap: 70px;
+}
+
+.sidebar-content {
+    position: sticky;
+    top: 15px;
 }
 
 .sidebar-heading {
     font-size: 1.7rem;
     font-weight: 600;
     color: white;
-    display: flex;
-    align-items: center;
-    gap: 15px;
 }
 
-.sidebar ul {
+.sidebar-heading span {
+    position: relative;
+    bottom: 21px;
+    left: 15px;    
+}
+
+.sidebar-content div {
+    margin-bottom: 70px;
+}
+
+.sidebar-content ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-left: 15px;
 }
 
-.sidebar li {
+.sidebar-content li {
     font-size: 1.2rem;
     font-weight: 600;
     color: white;
@@ -72,4 +83,5 @@ ul {
 .main-content {
     background-color: rgb(204, 203, 203);
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
