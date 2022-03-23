@@ -185,6 +185,7 @@ ul {
     width: 18px;
 }
 
+/* main content */
 .main-content {
     background-color: rgb(204, 203, 203);
     grid-column: 2 / 3;
@@ -192,4 +193,53 @@ ul {
     z-index: -1;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px auto;
+    box-sizing: border-box;
+}
+
+.main-content .headings {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 42px;
+}
+
+.main-content .mc-project-heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.main-content .mc-announcement-heading {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.main-content .mc-project-cards {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.main-content .mc-card {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px 15px 20px 25px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 250px;
+    z-index: 0;
+    box-shadow: inset 8px 0 rgb(255, 187, 0),
+                2px 5px 5px gray;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mc-card .icon-bar {
+    align-self: flex-end;
+    margin-top: auto;
 }
