@@ -192,7 +192,7 @@ ul {
     grid-row: 2 / 3;
     z-index: -1;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: auto 300px;
     grid-template-rows: 80px auto;
     box-sizing: border-box;
 }
@@ -242,4 +242,71 @@ ul {
 .mc-card .icon-bar {
     align-self: flex-end;
     margin-top: auto;
+}
+
+.main-content .mc-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.mc-panel .mc-panel-announcement {
+    grid-row: 1 / 2;
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 5px 5px gray;
+}
+
+.break-line {
+    height: 2px;
+    background-color: rgb(202, 200, 200);
+}
+
+.mc-panel .mc-trending-heading {
+
+}
+
+.mc-panel .mc-panel-trending {
+    background-color: white;
+    padding: 20px 30px 25px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    box-shadow: 2px 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trending-accounts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-accounts .profile-img {
+    height: 35px;
+    width: 35px;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 50%;
+}
+
+.img-1 {
+    background-color: yellow;
+}
+.img-2 {
+    background-color: rgb(241, 42, 158);
+}
+.img-3 {
+    background-color: brown;
+}
+.img-4 {
+    background-color: teal;
 }
